@@ -1,0 +1,37 @@
+# ABOUTME: Project configuration for FinCheck AI - financial grift detection and spending analysis tool
+# ABOUTME: Defines dependencies and metadata for the CLI-based chat agent
+
+[project]
+name = "fincheck-ai"
+version = "0.1.0"
+description = "AI-powered financial statement analyzer that detects grift and provides spending insights"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.12.0",
+    "langchain>=0.1.0",
+    "langchain-openai>=0.0.5",
+    "pdfplumber>=0.10.0",
+    "click>=8.1.0",
+    "rich>=13.7.0",
+    "python-dotenv>=1.0.0",
+    "pandas>=2.2.0",
+    "sqlalchemy>=2.0.0",
+]
+
+[project.scripts]
+fincheck = "src.main:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "black>=24.0.0",
+    "ruff>=0.2.0",
+]

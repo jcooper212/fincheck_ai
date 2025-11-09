@@ -1,0 +1,25 @@
+# Environment and secrets
+.env
+.venv/
+venv/
+*.pyc
+__pycache__/
+
+# User data
+data/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build
+dist/
+build/
+*.egg-info/
