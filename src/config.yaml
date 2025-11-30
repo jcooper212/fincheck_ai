@@ -1,0 +1,20 @@
+scenario:
+  income:
+    total_gross_court_uses: 758000        # Base ~408k + bonus ~350k gross
+    expected_bonus_gross: 350000
+
+  custody:
+    jamshed_parenting_time_pct: 0.1       # Change to 0.10 to test low parenting time
+
+  negotiation:
+    bonus_share_to_jasmine_pct: 30
+
+  house:
+    allow_house: true                     # Set to false to see "no credit" version
+    monthly_carrying_costs: 9200
+
+  real_numbers:
+    chase_total: 87443.63
+    amazon_chase_balance: 661.67
+    amex_balance: 3202.55
+    amazon_points_value: 3854
