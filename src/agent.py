@@ -1,4 +1,4 @@
-# ABOUTME: AI chat agent for conversational financial analysis with function calling
+##### ABOUTME: AI chat agent for conversational financial analysis with function calling
 # ABOUTME: Provides tools for querying transactions, detecting grift, and generating insights
 
 from typing import List, Dict, Any, Optional
